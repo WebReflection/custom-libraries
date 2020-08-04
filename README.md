@@ -4,11 +4,11 @@
 
 <sup>**Social Media Photo by [Matteo Maretto](https://unsplash.com/@matmaphotos) on [Unsplash](https://unsplash.com/)**</sup>
 
-A customElements like registry for user-land libraries.
+A [customElements](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry) like registry for user-land libraries.
 
 Based on [Some Web Components Hints](https://medium.com/@WebReflection/some-web-components-hint-75dce339ac6b) post idea, but without polluting the `customElements` registry.
 
-Compatible down to IE9 (with `setTimeout` polyfill) and every other browser, for a total of 272 bytes once minified and gzipped.
+Compatible down to IE10, or even IE9 (with `setTimeout` polyfill), and every other browser, for a total of 272 bytes once minified and gzipped.
 
 ```js
 import {define, get, whenDefined} from 'custom-libraries';
