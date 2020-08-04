@@ -2,9 +2,11 @@
 
 [![Build Status](https://travis-ci.com/WebReflection/custom-libraries.svg?branch=master)](https://travis-ci.com/WebReflection/custom-libraries) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/custom-libraries/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/custom-libraries?branch=master) ![WebReflection status](https://offline.report/status/webreflection.svg)
 
+<sup>**Social Media Photo by [Matteo Maretto](https://unsplash.com/@matmaphotos) on [Unsplash](https://unsplash.com/)**</sup>
+
 A customElements like registry for user-land libraries.
 
-Based on [Some Web Components Hints](https://medium.com/@WebReflection/some-web-components-hint-75dce339ac6b), but without polluting the `customElements` registry.
+Based on [Some Web Components Hints](https://medium.com/@WebReflection/some-web-components-hint-75dce339ac6b) post idea, but without polluting the `customElements` registry.
 
 Compatible down to IE9 (with `setTimeout` polyfill) and every other browser, for a total of 272 bytes once minified and gzipped.
 
