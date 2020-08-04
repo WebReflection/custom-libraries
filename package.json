@@ -1,6 +1,6 @@
 {
   "name": "custom-libraries",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A customElements like registry for user-land libraries",
   "main": "./cjs/index.js",
   "scripts": {
