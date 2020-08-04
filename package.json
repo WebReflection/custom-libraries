@@ -13,7 +13,12 @@
     "size": "cat min.js | brotli | wc -c && cat es.js | brotli | wc -c",
     "test": "nyc node test/index.js"
   },
-  "keywords": ["customElements", "registry", "user", "libraries"],
+  "keywords": [
+    "customElements",
+    "registry",
+    "user",
+    "libraries"
+  ],
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
@@ -37,5 +42,13 @@
   "unpkg": "min.js",
   "dependencies": {
     "@webreflection/lie": "^0.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/custom-libraries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/custom-libraries/issues"
+  },
+  "homepage": "https://github.com/WebReflection/custom-libraries#readme"
 }

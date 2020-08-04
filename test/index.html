@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>custom-libraries</title>
-  <script type="module">
-  import(
-    /^(?:localhost|[::1]|127(?:.d+){3})$/.test(location.hostname) ?
-    '../esm/index.js' :
-    'https://unpkg.com/custom-libraries?module'
-  )
-  .then((module) => {
-    console.log(module);
+  <script src="../index.js"></script>
+  <script>
+  customLibraries.whenDefined('test').then(function (test) {
+    if (test === 123 && customLibraries.get('test') === test)
+      document.body.textContent = 'it works!';
   });
+  this.onload = function () {
+    customLibraries.define('test', 123);
+  };
   </script>
 </head>
 <body></body>
